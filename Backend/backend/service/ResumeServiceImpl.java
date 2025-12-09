@@ -16,7 +16,7 @@ public class ResumeServiceImpl implements ResumeService {
 
     @Override
     public Map<String, Object> generateResumeResponse(String prompt) throws IOException {
-        String apiKey = "AIzaSyBUjpCppFhToJWJ1jcZ4ZQ3F5CIiYaFa0Q"; // Replace with your Gemini API Key
+        String apiKey = "Your Api Key"; // Replace with your Gemini API Key
         String endpoint = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=" + apiKey;
 
         // ✅ 1. Prompt for Gemini (pure JSON only, no markdown or explanation)
@@ -161,6 +161,7 @@ Extract structured data from this user input and fill all fields:
     }
 
 }
+
 
 
 
